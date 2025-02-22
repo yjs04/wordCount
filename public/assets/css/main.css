@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", serif;
+}
+
+#warp {
+    width: 100%;
+    min-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+}
+
+#board {
+    width: 65%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board_item {
+    width: calc(calc(100% - 10px) / 2);
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #E1E1E1;
+}
+
+#context {
+    width: 65%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #E1E1E1;
+    min-height: 300px;
+    position: relative;
+    height: 500px;
+}
+
+#context_input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-size: 16px;
+    position: relative;
+}
+
+#context_input:focus {
+    outline: none;
+}
+
+.board_title {
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.board_context {
+    height: calc(100% - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.board_text {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.board_text > span {
+    color: #4074c1;
+    font-weight: bold;
+    margin: 0 2px;
+}
+
+.board_context:nth-child(2) > div {
+    width: 100%;
+    display: flex;
+}
+
+.board_context:nth-child(2) > div > p {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 10px !important;
+}
+
+.right_menu {
+    width: 32%;
+    height: calc(100% - 157px);
+    border: 1px solid #E1E1E1;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#check_btn {
+    width: 100%;
+    height: 47px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -57px;
+    left: 0;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+#check_btn:hover {
+    opacity: 0.8;
+}
+
+.back_red {
+    background-color: #FF6262;
+}
+
+.back_green {
+    background-color: #1D9C4B;    
+}
+
+.back_yellow {
+    background-color: #FFCA26;
+}
+
+.back_purple {
+    background-color: #8950B9;
+}
+
+.color_red {
+    color: #FF6262 !important;
+}
+
+.color_green {
+    color: #1D9C4B !important;    
+}
+
+.color_yellow {
+    color: #FFCA26 !important;
+}
+
+.color_purple {
+    color: #8950B9 !important;
+}
+
+.board_btn {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.board_btn:hover {
+    opacity: 0.5;
+}
