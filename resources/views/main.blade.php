@@ -6,6 +6,7 @@
         <title>wordCount</title>
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=list" />
         <!-- /Styles -->
 
         <!-- js -->
@@ -43,8 +44,13 @@
                 <textarea name="context_input" id="context_input" cols="30" rows="10" placeholder="텍스트를 입력하세요."></textarea>
             </div>
             <div class="right_menu">
-                <p class="board_title"></p>
+                <div id="right_menu_head">
+                    <p class="board_title"></p>
+                    <button id="word_list_btn"><span class="material-symbols-outlined">list</span></button>
+                </div>
                 <div class="board_context">
+                검사 시작을 눌러주세요.<br>
+                최대 <span class="color_blue">4000</span>자까지 검사 가능합니다.
                 </div>
                 <button id="check_btn">검사하기</button>
             </div>

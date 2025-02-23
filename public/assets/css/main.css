@@ -130,6 +130,29 @@
     opacity: 0.8;
 }
 
+#right_menu_head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#word_list_btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+#word_list_btn:hover {
+    opacity: 0.8;
+}
+
+#word_list_btn > span {
+    font-size: 48px;
+}
+
 .back_red {
     background-color: #FF6262;
 }
@@ -160,6 +183,10 @@
 
 .color_purple {
     color: #8950B9 !important;
+}
+
+.color_blue {
+    color: #4074C1 !important;
 }
 
 .board_btn {
